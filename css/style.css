@@ -1,0 +1,199 @@
+/*
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Light red: hsl(0, 100%, 67%)
+- Orangey yellow: hsl(39, 100%, 56%)
+- Green teal: hsl(166, 100%, 37%)
+- Cobalt blue: hsl(234, 85%, 45%)
+
+## Gradients
+
+- Light slate blue (background): hsl(252, 100%, 67%)
+- Light royal blue (background): hsl(241, 81%, 54%)
+
+- Violet blue (circle): hsla(256, 72%, 46%, 1)
+- Persian blue (circle): hsla(241, 72%, 46%, 0)
+
+
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Pale blue: hsl(221, 100%, 96%)
+- Light lavender: hsl(241, 100%, 89%)
+- Dark gray blue: hsl(224, 30%, 27%)
+
+### Notes
+
+Use transparency to get the colour variations necessary to match the design. Hint: look into using `hsla()`.
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraphs): 18px
+
+### Font
+
+- Family: [Hanken Grotesk](https://fonts.google.com/specimen/Hanken+Grotesk)
+- Weights: 500, 700, 800
+*/
+body {
+    
+    font-family: 'Hanken Grotesk', sans-serif;
+    text-align: center;
+    margin: 0;
+  
+}
+
+.card-container {
+    
+    display: flex;
+    margin: 15px auto 15px auto;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+
+}
+
+.score-card {
+    display: inline-block;
+    width: 300px;
+    margin: 0;
+    border-radius: 15px;
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    padding: 15px 10px 15px 10px;
+    text-align: center;
+    
+}
+
+.summary-card {
+    background-color: white;
+    display: inline-block;
+    text-align: left;
+    position: relative;
+    width: 300px;
+    vertical-align: top;
+    border-radius: 15px;
+    margin: 0;
+    padding: 15px 10px 15px 30px;
+
+}
+
+.scores {
+    text-align: left;
+    
+}
+.summary-card>h1{
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 30px;
+
+}
+.points>span{
+    color:hsl(224, 30%, 27%);
+    font-weight: 900;
+}
+.points{
+    position: absolute;
+    width: 120px;
+    right: 0px;
+    
+    
+}
+.scores>h2>span{
+    color:hsl(241, 100%, 89%);
+    font-weight: 700;
+}
+.scores>h2{
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+
+.circle-score {
+    display: inline-block;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    text-align: center;
+    width: 55%;
+    border-radius: 500px;
+    padding: 10%;
+    margin-bottom: 30px;
+}
+.circle-score>h1{
+    font-size: 58px;
+    font-weight: 800;
+    margin: 0;
+    position: relative;
+    top: 15px;
+}
+#score-title{
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+
+#summary-title {
+    color: hsl(224, 30%, 27%);
+}
+#total-score{
+    opacity: 60%;
+}
+
+#score-response>h1{
+    font-size: 32px;
+    font-weight: 700;
+}
+.scores>button{
+    border-radius: 30px;
+    height: 50px;
+    width: 100%;
+    font-weight: 700;
+    color: white;
+    background-color:hsl(241, 81%, 54%) ;
+    border: none;
+
+}
+.scores>button:hover{
+    
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    
+}
+
+p {
+    margin: 0 auto 30px auto;
+    display: inline-block;
+    width: 85%;
+    color: hsl(241, 100%, 89%);
+    font-size: 18px;
+}
+
+h2 {
+    color: hsl(0, 0%, 100%);
+    font-size: 18px;
+}
+i{
+    margin-right: 20px;
+    position: relative;
+    left:10px
+    
+}
